@@ -24,14 +24,34 @@
       <p>June 12, 2026 &mdash; Pelican Club, Jupiter, FL</p>
     </section>
 
-    <section class="gallery">
-      <img src="IMG_0062.jpeg" alt="Dyllan and Samantha on the beach">
-      <img src="IMG_0080.jpeg" alt="Dyllan lifting Samantha">
+    <section class="slideshow">
+      <div class="slides fade">
+        <img src="IMG_0062.jpeg" alt="Dyllan and Samantha on the beach">
+      </div>
+      <div class="slides fade">
+        <img src="IMG_0080.jpeg" alt="Dyllan lifting Samantha">
+      </div>
     </section>
   </main>
 
   <footer>
     <p>With love, Dyllan & Samantha</p>
   </footer>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("slides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+  </script>
 </body>
 </html>
