@@ -66,18 +66,17 @@ section h2 {
 /* 🖼 Slideshow Styling */
 .slideshow {
   position: relative;
-  max-width: 90%;
-  width: 500px;
-  margin: 40px auto;
+  max-width: 400px;
+  margin: 30px auto;
 }
 
 .slideshow img {
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 300px;
   object-fit: cover;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .slides {
