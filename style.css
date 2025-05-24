@@ -48,32 +48,26 @@ main {
 
 .hero h2 {
   font-size: 2.25em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #8c3f5d;
 }
 
-.hero p {
+.wedding-details p {
   font-size: 1.25em;
   color: #6b4e4e;
-}
-
-section h2 {
-  font-size: 2em;
-  color: #8c3f5d;
-  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 /* 🖼 Slideshow Styling */
 .slideshow {
   position: relative;
   max-width: 400px;
-  margin: 30px auto;
+  margin: 20px auto;
 }
 
 .slideshow img {
   width: 100%;
-  height: auto;
-  max-height: 1000px;
+  height: 1000px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -93,6 +87,35 @@ section h2 {
   to {opacity: 1}
 }
 
+/* 📅 Schedule Page Styling */
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.schedule-list .event {
+  background-color: #fbe9f0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e0b7c5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.schedule-list .event h3 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #8c3f5d;
+}
+
+.schedule-list .event p {
+  margin: 5px 0 0;
+  font-size: 1.1em;
+  color: #4b2e2e;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
